@@ -1,139 +1,101 @@
-# Awesome-Data-Governance-Compliance
-
-# Awesome-Data-Governance-Compliance
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-
-*Focused on Data Catalogs, Metadata Management, Data Quality, Privacy & Regulatory Compliance*
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Data Governance & Compliance**. These tools help organizations catalog data assets, track lineage, enforce policies, manage data quality, and demonstrate regulatory compliance across hybrid and multi-cloud environments.
-
-
-
-**Examples** include Microsoft Purview, Collibra, Alation, OneTrust, Informatica Cloud Data Governance, Atlan, BigID, IBM Knowledge Catalog, Privacera, and Immuta (the category leaders).
-
-
-
-**Open-source emphasis**: The open-source data governance ecosystem is **mature and production-proven**. **DataHub** (Apache-2.0) leads with real-time streaming metadata, column-level lineage, and native MCP support for AI agents . **OpenMetadata** provides a unified metadata graph with a built-in MCP server and semantic search . **Apache Atlas** remains the Hadoop-ecosystem standard with deep Hive/Spark/Kafka integration . This section documents these production-grade solutions.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## 📖 Table of Contents
-
-
-
-- [☁️ SaaS/Hosted Platforms](#-saas-hosted-platforms)
-
-- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
-
-- [🤝 How to Contribute](#-how-to-contribute)
-
-- [⚠️ Disclaimer](#-disclaimer)
-
-
-
-## ☁️ SaaS/Hosted Platforms
-
-
-
-> **📊 Market Context**: The global data governance practice platform market was valued at **$670 million in 2025** and is projected to reach **$750 million in 2026**, growing at a **12.3% CAGR** toward **$1.2 billion by 2030** . The sector is **moderately fragmented** — **Microsoft Purview** offers a **free foundational tier** for Microsoft 365 sources with pay-as-you-go for non-M365 environments . **Collibra** uses **Collibra Units (CUs)** for AI features with annual reset and no rollover . **Alation** charges **0.25 ACU per metered action** with a shared pool across products . **OneTrust** uses **usage meters at the package level** (average daily unique visitors for CMP, annual scan volume for EDD) . No single vendor holds a winner-take-all position; enterprises typically run multi-vendor stacks.
-
-
-
-| Platform | Description | Pricing (Starting Tier) | Free Tier Limits | Company Size |
-
-|----------|-------------|------------------------|------------------|--------------|
-
-| **[Microsoft Purview](https://www.microsoft.com/en-us/security/business/microsoft-purview)** | **Integrated data security and governance platform.** Extends from Microsoft 365 to AWS, Azure SQL, Box, Dropbox, Google Drive, and Fabric via pay-as-you-go billing . | **Per-user license** for M365 sources (bundled with E5); **Pay-as-you-go** for non-M365 sources (Azure subscription required) . | **Free foundational tier** for Microsoft 365 and Windows/macOS endpoints. **Pay-as-you-go** consumption model based on Azure billing . | **~$281B revenue (Microsoft FY2025)** |
-
-| **[Collibra](https://www.collibra.com/)** | **Enterprise data intelligence platform.** Data catalog, governance, lineage, and AI-powered features via Collibra Units (CUs). | **Collibra Units (CUs)** for AI features. Extra CU bundles available at contract level. **Annual CU reset** — unused units expire . | **None** — enterprise demo required. **CU guardrails** at 80%, 100%, and 120% consumption thresholds . | **Private (~$2.6B valuation est.)** |
-
-| **[Alation](https://www.alation.com/)** | **Enterprise data catalog with collaborative governance.** AI-powered curation, data quality checks, and agent studio via ACU consumption model. | **Alation Consumption Units (ACUs)** — single pool across five AI products. **Curation Automation**: 0.05 ACU per AI field write. **Data Quality**: 0.075 ACU per check run. **Agent Studio**: 0.25 ACU per call/tool invocation . | **Free tier**: One-time cumulative grant of tool calls that never resets. **Paid tier**: Monthly allocation resetting each billing period . | **Private (~$1.7B valuation est.)** |
-
-| **[OneTrust](https://www.onetrust.com/)** | **Privacy, security, and data governance platform.** Modular packages with usage-metered pricing at package level . | **Usage meters** at package level: **Average Daily Unique Visitors** (CMP), **Data Subjects** (UCPM), **Annual Volume Scanned** (EDD) . | **None** — enterprise demo required. **Implementation/onboarding**: 20–40% of annual subscription . | **Private (~$5.1B valuation est.)** |
-
-| **[Informatica Cloud Data Governance](https://www.informatica.com/)** | **Unified data governance within IDMC.** Metadata management, data lineage, and governance workflows. | **Consumption-based (IPU)** for IDMC. **PowerCenter** (legacy): Perpetual licensing + annual maintenance . | **None** — enterprise demo required. **Consumption true-ups** quarterly or annual for exceeding committed IPU levels . | **~$1.6B revenue, private** |
-
-| **[Atlan](https://atlan.com/)** | **Modern data catalog and governance platform.** Context Layer for AI, active lineage, and automation. | **Custom pricing** — quote required. Positioned as **faster time-to-value** and **more transparent** than Alation . | **None** — enterprise demo required. | **Private (~$100M+ ARR est.)** |
-
-| **[BigID](https://bigid.com/)** | **Data discovery and classification platform.** Often positioned as a complement to OneTrust for discovery use cases . | **Custom pricing** — quote required. **Typically less expensive than OneTrust** for mid-market deployments . | **None** — enterprise demo required. | **Private (~$1B+ valuation est.)** |
-
-| **[IBM Knowledge Catalog](https://www.ibm.com/products/knowledge-catalog)** | **Enterprise metadata and governance within IBM Cloud Pak for Data.** AI-powered cataloging and policy management. | **Custom enterprise pricing** — quote required. | **None** — enterprise demo required. | **~$63B revenue (IBM FY2025)** |
-
-| **[Privacera](https://privacera.com/)** | **Data security and governance platform powered by Apache Ranger.** Access control, encryption, and compliance. | **$1.00/year** (SaaS marketplace starting price) . | **None** — enterprise demo required. | **Private (~$50M+ raised est.)** |
-
-| **[Immuta](https://www.immuta.com/)** | **Data security platform with automated governance.** Dynamic access control and policy enforcement. | **Free** (SaaS marketplace listing) . | **Free tier** available on cloud marketplaces . | **Private (~$100M+ raised)** |
-
-
-
-## 🔓 Open-Source GitHub Projects
-
-
-
-Sorted by star count (descending). Star badge links to each repo's stargazers page.
-
-
-
-| Repo | Description | Stars |
-
-|---|---|---|
-
-| **[DataHub](https://github.com/datahub-project/datahub)** — **The leading open-source metadata platform.** Born at LinkedIn to handle hyperscale data, now proven at thousands of organizations managing millions of data assets. **Real-time streaming metadata** via Kafka (updates in seconds, not hours). **Column-level lineage**, 80+ production-grade connectors, GraphQL/OpenAPI, Python/Java SDKs, and **native MCP support for AI agents**. **Apache-2.0** licensed, vendor-neutral, community-driven . | [![Stars](https://img.shields.io/github/stars/datahub-project/datahub?style=social&color=white)](https://github.com/datahub-project/datahub/stargazers) | ~7,200 |
-
-| **[OpenMetadata](https://github.com/open-metadata/OpenMetadata)** — **Unified metadata platform with AI-ready context.** Single place to discover, collaborate, and govern data. **Memories** preserve organizational context (why metrics changed, why columns renamed, what agents learned). **MCP server** lets AI assistants search metadata, inspect lineage, and retrieve memory nuggets. **Semantic Search** finds assets by meaning. **AI SDK** (`data-ai-sdk`) for building custom AI applications . | [![Stars](https://img.shields.io/github/stars/open-metadata/OpenMetadata?style=social&color=white)](https://github.com/open-metadata/OpenMetadata/stargazers) | ~7,200 |
-
-| **[Apache Atlas](https://github.com/apache/atlas)** — **Metadata management and governance for Hadoop.** **2,011 stars**, 895 forks, Apache-2.0 licensed, Java-based . Centralized metadata management, data lineage, classification-based security, and business glossary. **Deep integration with Hive, HBase, Spark, Kafka** — nearly zero-config metadata collection for Hadoop stacks . **Limitation**: Cloud-native adaptation weaker; community maintenance pace slower than DataHub/OpenMetadata . | [![Stars](https://img.shields.io/github/stars/apache/atlas?style=social&color=white)](https://github.com/apache/atlas/stargazers) | ~2,011 |
-
-| **[SetGo](https://github.com/)** — **Open-source Python toolkit for metadata readiness assessment.** Evaluates **FAIR sub-principles (15 principles)**, governance policies, licensing (SPDX registry), provenance completeness, reproducibility, and catalog-ready fields. **Six independent assessment modules** with configurable policies (MINIMAL, STANDARD, STRICT). **Composite readiness score** (0-1) with letter grades. **CI/CD integration** with exit codes. **Agentic support** via SKILL.md and `/setgo` command for Claude Code . | [![SetGo](https://img.shields.io/badge/SetGo-Toolkit-blue)](https://github.com/) | N/A |
-
-
-
-## 🤝 How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## ⚠️ Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Data governance platforms handle sensitive metadata and potentially regulated data; ensure proper access controls and compliance with organizational policies.
-
-- **Open-source reality**: The open-source ecosystem for data governance is **mature and production-proven**. **DataHub** leads with real-time streaming metadata, column-level lineage, and native MCP support — used by Netflix, Visa, and Apple . **OpenMetadata** provides a unified metadata graph with built-in MCP server and semantic search . **Apache Atlas** remains the Hadoop-ecosystem standard with deep Hive/Spark/Kafka integration . However, **commercial platforms** (Collibra, Alation, Microsoft Purview) provide **managed infrastructure, enterprise SLAs, and integrated AI features** that open-source alternatives require significant operational investment to match. **DataHub's learning curve is steep** — it doesn't include a data quality engine and requires integration with Great Expectations or custom rules . The open-source path is **genuinely viable** for organizations with strong data engineering capacity.
-
-- **Pricing caveat**: All pricing figures are **verified against cited search results** but may change without notice. **Consumption models vary** — Collibra CUs reset annually with no rollover , Alation ACUs use a shared pool with daily refresh , and OneTrust meters at package level . **Implementation/onboarding** typically adds **20–40%** to annual subscription costs for enterprise deployments .
-
-
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Data Governance & Compliance Banner" width="100%">
+</p>
+
+# 🛡️ Awesome Data Governance & Compliance 📊
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Governance-Compliance/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-Governance-Compliance?style=flat-square&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Governance-Compliance/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Data-Governance-Compliance?style=flat-square&color=blue" alt="GitHub Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Governance-Compliance/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Data-Governance-Compliance?style=flat-square&color=green" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> **A curated list of enterprise SaaS platforms and production-grade open-source tools for Data Governance, Data Catalogs, Metadata Management, Data Lineage, Data Quality, Privacy & Regulatory Compliance.**
 
 ---
 
+## 📖 Table of Contents
 
+- [☁️ SaaS / Hosted Enterprise Platforms](#%EF%B8%8F-saas--hosted-enterprise-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⭐ Star History](#-star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
 
-**Made for data stewards, governance engineers, compliance officers, and data platform teams.**
+---
 
-Let's make data governance more open, transparent, and AI-ready.
+## ☁️ SaaS / Hosted Enterprise Platforms
+
+> **📊 Market Size & Industry Structure**: The global data governance platform market is valued at **$750 Million in 2026** and is projected to reach **$1.2 Billion by 2030** (growing at a 12.3% CAGR). The market is **moderately fragmented**; enterprise deployments typically combine specialized tools for cataloging, privacy, and security rather than relying on a single winner-take-all vendor.
+
+| Platform | Description | Pricing (Starting Tier) | Free Tier / Trial Limits | Company Size (Revenue / Valuation) |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft Purview](https://www.microsoft.com/en-us/security/business/microsoft-purview)** | **Integrated Data Security & Governance Platform.** Unified data catalog, compliance management, and sensitive data discovery across M365, Azure, AWS, and hybrid multi-cloud environments. | **$1.00/GB/month** for governance data scanning + **$9.00/user/month** (Audit/Compliance add-ons) | **Free foundational tier** included with M365 E5; 30-day Azure free trial with $200 credits for pay-as-you-go workloads. | **~$281B Revenue** (Microsoft FY2025) |
+| **[IBM Knowledge Catalog](https://www.ibm.com/products/knowledge-catalog)** | **Enterprise Metadata & Governance Platform.** AI-powered data cataloging, policy management, active lineage, and automatic data classification inside IBM Cloud Pak for Data. | **$1,500/month** (Enterprise cloud instances on IBM Cloud) | **30-day free trial** on IBM Cloud Lite with 10,000 catalog assets limit. | **~$63B Revenue** (IBM FY2025) |
+| **[OneTrust](https://www.onetrust.com/)** | **Trust & Privacy Governance Cloud.** Market leader in privacy management, consent governance, third-party risk management, and automated data discovery. | **$10,000/year** starting subscription contract | **No permanent free tier**; 14-day guided trial available upon sales approval. | **~$5.1B Valuation** (Private) |
+| **[Collibra](https://www.collibra.com/)** | **Enterprise Data Intelligence Platform.** Pioneer in data stewardship, enterprise data catalog, active metadata, and AI governance using Collibra Units (CUs). | **$170,000/year** standard enterprise base contract | **No free tier or public trial**; customized enterprise demo environment provided during evaluation. | **~$2.6B Valuation** (Private) |
+| **[Alation](https://www.alation.com/)** | **Enterprise Data Catalog & Data Culture Platform.** Collaborative metadata cataloging, automated SQL query curation, active lineage, and AI Agent Studio. | **$60,000/year** base platform subscription | **No free tier**; 14-day sandbox trial available for enterprise evaluation. | **~$1.7B Valuation** (Private) |
+| **[BigID](https://bigid.com/)** | **Data Intelligence & ML-Driven Classification.** Advanced data discovery, privacy compliance, DSPM, and automated sensitive data scanning across multi-cloud storage. | **$30,000/year** starting tier for mid-market deployments | **No free tier**; 30-day proof-of-concept (PoC) sandbox for qualified enterprises. | **~$1.0B Valuation** (Private) |
+| **[Atlan](https://atlan.com/)** | **Modern Active Metadata & AI Context Platform.** Collaborative data catalog featuring Context Layer for AI agents, active lineage, and automated data curation. | **$40,000/year** starting subscription | **No permanent free tier**; 14-day guided trial environment available on request. | **~$100M+ ARR** (~$750M Valuation) |
+| **[Informatica Cloud Data Governance](https://www.informatica.com/)** | **IDMC Data Governance & Catalog.** Enterprise metadata cataloging, lineage tracking, and data quality workflows powered by CLAIRE AI on IDMC. | **$2,000/month** (Informatica Processing Units / IPU consumption pool) | **30-day free trial** of Informatica Intelligent Data Management Cloud (IDMC). | **~$1.6B Revenue** (Private/Public) |
+| **[Immuta](https://www.immuta.com/)** | **Data Security & Automated Access Control.** Attribute-based access control (ABAC), dynamic data masking, and privacy policy enforcement across cloud data platforms. | **$1.20/user/hour** on AWS/Snowflake Marketplaces | **Free tier available** on AWS/Snowflake Marketplaces (up to 5 users free forever). | **~$100M+ Funding** (Private) |
+| **[Privacera](https://privacera.com/)** | **Data Security & Governance powered by Apache Ranger.** Fine-grained access control, data encryption, and compliance auditing across hybrid cloud analytical stacks. | **$1.00/year** starting listing price on AWS Marketplace | **30-day free trial** on AWS Marketplace and cloud sandbox environments. | **~$50M+ Funding** (Private) |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+Below are production-grade open-source metadata platforms, data governance frameworks, and data quality toolkits, sorted by GitHub star count in descending order.
+
+| Repo & Description | Star Count | License | Primary Tech Stack |
+| :--- | :--- | :--- | :--- |
+| **[DataHub](https://github.com/datahub-project/datahub)** — **Hyperscale Real-Time Metadata Platform.** Born at LinkedIn, DataHub is the leading open-source metadata platform. Features real-time Kafka streaming metadata ingestion, column-level lineage, 80+ connectors, GraphQL/Python SDKs, and native Model Context Protocol (MCP) support for AI agents. | [![DataHub Stars](https://img.shields.io/github/stars/datahub-project/datahub?style=social&color=white)](https://github.com/datahub-project/datahub/stargazers) | Apache-2.0 | Java / Python / React / Kafka |
+| **[OpenMetadata](https://github.com/open-metadata/OpenMetadata)** — **Unified Metadata & AI-Ready Context Graph.** Single platform for data discovery, active lineage, data quality, and governance. Features built-in MCP server, semantic search, AI memory nuggets (`data-ai-sdk`), and automated policy workflows. | [![OpenMetadata Stars](https://img.shields.io/github/stars/open-metadata/OpenMetadata?style=social&color=white)](https://github.com/open-metadata/OpenMetadata/stargazers) | Apache-2.0 | Java / Python / TypeScript / ES |
+| **[Amundsen](https://github.com/amundsen-io/amundsen)** — **Data Discovery & Metadata Engine.** Originally created at Lyft, Amundsen uses graph search to index data assets, track ownership, and display schema metadata to data analysts and engineers. | [![Amundsen Stars](https://img.shields.io/github/stars/amundsen-io/amundsen?style=social&color=white)](https://github.com/amundsen-io/amundsen/stargazers) | Apache-2.0 | Python / Neo4j / Elasticsearch |
+| **[Marquez](https://github.com/MarquezProject/marquez)** — **Open Lineage Metadata Collection Engine.** The reference implementation of OpenLineage. Collects, aggregates, and visualizes complex data pipeline lineage, job execution metrics, and dataset versioning across Airflow, Spark, and dbt. | [![Marquez Stars](https://img.shields.io/github/stars/MarquezProject/marquez?style=social&color=white)](https://github.com/MarquezProject/marquez/stargazers) | Apache-2.0 | Java / PostgreSQL / React |
+| **[Apache Atlas](https://github.com/apache/atlas)** — **Enterprise Governance Framework for Hadoop & Big Data.** Centralized metadata management, classification-based security, data lineage, and business glossary with native integration for Hive, Spark, HBase, and Kafka. | [![Apache Atlas Stars](https://img.shields.io/github/stars/apache/atlas?style=social&color=white)](https://github.com/apache/atlas/stargazers) | Apache-2.0 | Java / JanusGraph / HBase |
+| **[Apache Ranger](https://github.com/apache/ranger)** — **Comprehensive Data Security & Authorization Engine.** Framework to enable, monitor, and manage comprehensive data security across Hadoop, Spark, Trino, and cloud data platforms with centralized access policy administration. | [![Apache Ranger Stars](https://img.shields.io/github/stars/apache/ranger?style=social&color=white)](https://github.com/apache/ranger/stargazers) | Apache-2.0 | Java / Security Framework |
+| **[Magda](https://github.com/magda-io/magda)** — **Federated Open Data Catalog System.** Cloud-native ecosystem for federating, indexing, and searching internal and public data catalogs across organizations with automated harvesting and spatial capabilities. | [![Magda Stars](https://img.shields.io/github/stars/magda-io/magda?style=social&color=white)](https://github.com/magda-io/magda/stargazers) | Apache-2.0 | TypeScript / Scala / Kubernetes |
+| **[SetGo](https://github.com/ishandutta2007/Awesome-Data-Governance-Compliance)** — **Metadata Readiness & Governance Assessment Toolkit.** Python toolkit evaluating FAIR principles, governance policies, license compliance (SPDX), and data provenance with automated CI/CD readiness scoring (0-1). | [![SetGo Stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-Governance-Compliance?style=social&color=white)](https://github.com/ishandutta2007/Awesome-Data-Governance-Compliance/stargazers) | MIT | Python / Governance CLI |
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are welcome! Please follow these simple guidelines:
+
+1. 🍴 **Fork the repository**
+2. 📝 **Add or update entries** in `README.md` following the tabular format.
+3. 🔍 **Ensure factual accuracy**: Provide verified starting tier pricing, free limits, company sizes, or star counts.
+4. 🚀 **Submit a Pull Request** with a brief summary of additions.
+
+Read our awesome meta guide at [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome) for contribution standards!
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Data-Governance-Compliance&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Data-Governance-Compliance&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsorship
+
+If you find this curated list helpful for your enterprise architecture, research, or data engineering team, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others discover it!
+- 🔀 **Fork and share** with your data engineering and compliance colleagues.
+- ☕ **Buy me a coffee / Sponsor**: Support ongoing maintenance and curated data updates via [GitHub Sponsors](https://github.com/sponsors/ishandutta2007).
+
+Thank you for being part of the open data governance community! 🙏
+
+---
+
+## ⚠️ Disclaimer
+
+- This list is **community-curated** for educational and research purposes — it is not exhaustive and does not constitute formal software endorsement.
+- Data governance platforms handle sensitive metadata and access controls; always perform independent security audits before deploying enterprise software.
+- **Pricing & Free Limits Caveat**: All pricing estimates and trial terms reflect public disclosures as of October 2026 and are subject to change by respective vendors.
