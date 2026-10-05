@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Data-Governance-Compliance/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-Governance-Compliance?style=flat-square&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Governance-Compliance/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-Governance-Compliance?style=flat-square&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-Governance-Compliance/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Data-Governance-Compliance?style=flat-square&color=blue" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-Governance-Compliance/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Data-Governance-Compliance?style=flat-square&color=green" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -48,9 +48,9 @@
 
 ## 🔓 Open-Source GitHub Projects
 
-Below are production-grade open-source metadata platforms, data governance frameworks, and data quality toolkits, sorted by GitHub star count in descending order.
+Below are production-grade open-source metadata platforms, data governance frameworks, and data quality toolkits, sorted by GitHub Stars_Count in descending order.
 
-| Repo & Description | Star Count | License | Primary Tech Stack |
+| Repo & Description | Stars_Count | License | Primary Tech Stack |
 | :--- | :--- | :--- | :--- |
 | **[DataHub](https://github.com/datahub-project/datahub)** — **Hyperscale Real-Time Metadata Platform.** Born at LinkedIn, DataHub is the leading open-source metadata platform. Features real-time Kafka streaming metadata ingestion, column-level lineage, 80+ connectors, GraphQL/Python SDKs, and native Model Context Protocol (MCP) support for AI agents. | [![DataHub Stars](https://img.shields.io/github/stars/datahub-project/datahub?style=social&color=white)](https://github.com/datahub-project/datahub/stargazers) | Apache-2.0 | Java / Python / React / Kafka |
 | **[OpenMetadata](https://github.com/open-metadata/OpenMetadata)** — **Unified Metadata & AI-Ready Context Graph.** Single platform for data discovery, active lineage, data quality, and governance. Features built-in MCP server, semantic search, AI memory nuggets (`data-ai-sdk`), and automated policy workflows. | [![OpenMetadata Stars](https://img.shields.io/github/stars/open-metadata/OpenMetadata?style=social&color=white)](https://github.com/open-metadata/OpenMetadata/stargazers) | Apache-2.0 | Java / Python / TypeScript / ES |
@@ -69,7 +69,7 @@ Contributions are welcome! Please follow these simple guidelines:
 
 1. 🍴 **Fork the repository**
 2. 📝 **Add or update entries** in `README.md` following the tabular format.
-3. 🔍 **Ensure factual accuracy**: Provide verified starting tier pricing, free limits, company sizes, or star counts.
+3. 🔍 **Ensure factual accuracy**: Provide verified starting tier pricing, free limits, company sizes, or Stars_Counts.
 4. 🚀 **Submit a Pull Request** with a brief summary of additions.
 
 Read our awesome meta guide at [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome) for contribution standards!
